@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F0C260178C7939F3DB2912F /* Pods_JPUtilsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763C2439C2B850A024E66479 /* Pods_JPUtilsDemo.framework */; };
+		2097A17CFCFF74C45CE87186 /* JPRouteUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097AB604E4E317CE78272D1 /* JPRouteUtils.m */; };
+		2097A389BE81C1D311081DBD /* JPSystemUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097A9B3F561948CDBFF975C /* JPSystemUtils.m */; };
+		2097A68950615219CD3ECBC9 /* JPViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097AD33A562DFCF5261C7BF /* JPViewUtils.m */; };
 		F5081BE125B7DB5500A92C12 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5081BE025B7DB5500A92C12 /* AppDelegate.m */; };
 		F5081BE425B7DB5500A92C12 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5081BE325B7DB5500A92C12 /* SceneDelegate.m */; };
 		F5081BE725B7DB5500A92C12 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5081BE625B7DB5500A92C12 /* ViewController.m */; };
@@ -14,9 +18,23 @@
 		F5081BEC25B7DB5800A92C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5081BEB25B7DB5800A92C12 /* Assets.xcassets */; };
 		F5081BEF25B7DB5800A92C12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5081BED25B7DB5800A92C12 /* LaunchScreen.storyboard */; };
 		F5081BF225B7DB5800A92C12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5081BF125B7DB5800A92C12 /* main.m */; };
+		F5081BFF25B7E36900A92C12 /* JPDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F5081BFE25B7E36900A92C12 /* JPDateUtils.m */; };
+		F5081C0425B7FE0700A92C12 /* JPStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F5081C0325B7FE0700A92C12 /* JPStringUtils.m */; };
+		F5081C1525B82D5300A92C12 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5081C1425B82D5300A92C12 /* TestViewController.m */; };
+		F5081C1B25B8344E00A92C12 /* TestSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5081C1A25B8344E00A92C12 /* TestSubViewController.m */; };
+		F5081C2F25B847D700A92C12 /* JPUtilsConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F5081C2E25B847D700A92C12 /* JPUtilsConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2097A613711040036798FE98 /* JPViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPViewUtils.h; sourceTree = "<group>"; };
+		2097A9B3F561948CDBFF975C /* JPSystemUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPSystemUtils.m; sourceTree = "<group>"; };
+		2097AB604E4E317CE78272D1 /* JPRouteUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPRouteUtils.m; sourceTree = "<group>"; };
+		2097AB67889E1B821537386F /* JPSystemUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPSystemUtils.h; sourceTree = "<group>"; };
+		2097AB8EE3208785A65EFE19 /* JPRouteUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPRouteUtils.h; sourceTree = "<group>"; };
+		2097AD33A562DFCF5261C7BF /* JPViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPViewUtils.m; sourceTree = "<group>"; };
+		5DFB60EE6C2A9DDEBE9F17C6 /* Pods-JPUtilsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPUtilsDemo.debug.xcconfig"; path = "Target Support Files/Pods-JPUtilsDemo/Pods-JPUtilsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		763C2439C2B850A024E66479 /* Pods_JPUtilsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JPUtilsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93E19467E17B0C9824670BCC /* Pods-JPUtilsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPUtilsDemo.release.xcconfig"; path = "Target Support Files/Pods-JPUtilsDemo/Pods-JPUtilsDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F5081BDC25B7DB5500A92C12 /* JPUtilsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPUtilsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5081BDF25B7DB5500A92C12 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5081BE025B7DB5500A92C12 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +47,17 @@
 		F5081BEE25B7DB5800A92C12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5081BF025B7DB5800A92C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5081BF125B7DB5800A92C12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5081BFD25B7E36900A92C12 /* JPDateUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPDateUtils.h; sourceTree = "<group>"; };
+		F5081BFE25B7E36900A92C12 /* JPDateUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPDateUtils.m; sourceTree = "<group>"; };
+		F5081C0225B7FE0700A92C12 /* JPStringUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPStringUtils.h; sourceTree = "<group>"; };
+		F5081C0325B7FE0700A92C12 /* JPStringUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPStringUtils.m; sourceTree = "<group>"; };
+		F5081C1325B82D5300A92C12 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		F5081C1425B82D5300A92C12 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		F5081C1925B8344E00A92C12 /* TestSubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSubViewController.h; sourceTree = "<group>"; };
+		F5081C1A25B8344E00A92C12 /* TestSubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSubViewController.m; sourceTree = "<group>"; };
+		F5081C2C25B847CB00A92C12 /* JPUtils-OC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JPUtils-OC.h"; sourceTree = "<group>"; };
+		F5081C2D25B847D700A92C12 /* JPUtilsConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPUtilsConfig.h; sourceTree = "<group>"; };
+		F5081C2E25B847D700A92C12 /* JPUtilsConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPUtilsConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +65,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F0C260178C7939F3DB2912F /* Pods_JPUtilsDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BEA12047ACD8E96C9758BAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DFB60EE6C2A9DDEBE9F17C6 /* Pods-JPUtilsDemo.debug.xcconfig */,
+				93E19467E17B0C9824670BCC /* Pods-JPUtilsDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2097A6595A310BB0B2B23129 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2097AD33A562DFCF5261C7BF /* JPViewUtils.m */,
+				2097A613711040036798FE98 /* JPViewUtils.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB18D5A9EAA31F5630085D19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				763C2439C2B850A024E66479 /* Pods_JPUtilsDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F5081BD325B7DB5500A92C12 = {
 			isa = PBXGroup;
 			children = (
 				F5081BDE25B7DB5500A92C12 /* JPUtilsDemo */,
 				F5081BDD25B7DB5500A92C12 /* Products */,
+				0BEA12047ACD8E96C9758BAC /* Pods */,
+				DB18D5A9EAA31F5630085D19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,13 +119,17 @@
 		F5081BDE25B7DB5500A92C12 /* JPUtilsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F5081BF925B7DB7500A92C12 /* JPUtils */,
+				F5081BF925B7DB7500A92C12 /* JPUtils-OC */,
 				F5081BDF25B7DB5500A92C12 /* AppDelegate.h */,
 				F5081BE025B7DB5500A92C12 /* AppDelegate.m */,
 				F5081BE225B7DB5500A92C12 /* SceneDelegate.h */,
 				F5081BE325B7DB5500A92C12 /* SceneDelegate.m */,
 				F5081BE525B7DB5500A92C12 /* ViewController.h */,
 				F5081BE625B7DB5500A92C12 /* ViewController.m */,
+				F5081C1325B82D5300A92C12 /* TestViewController.h */,
+				F5081C1425B82D5300A92C12 /* TestViewController.m */,
+				F5081C1925B8344E00A92C12 /* TestSubViewController.h */,
+				F5081C1A25B8344E00A92C12 /* TestSubViewController.m */,
 				F5081BE825B7DB5500A92C12 /* Main.storyboard */,
 				F5081BEB25B7DB5800A92C12 /* Assets.xcassets */,
 				F5081BED25B7DB5800A92C12 /* LaunchScreen.storyboard */,
@@ -77,12 +139,56 @@
 			path = JPUtilsDemo;
 			sourceTree = "<group>";
 		};
-		F5081BF925B7DB7500A92C12 /* JPUtils */ = {
+		F5081BF925B7DB7500A92C12 /* JPUtils-OC */ = {
 			isa = PBXGroup;
 			children = (
+				F5081C2C25B847CB00A92C12 /* JPUtils-OC.h */,
+				F5081C2D25B847D700A92C12 /* JPUtilsConfig.h */,
+				F5081C2E25B847D700A92C12 /* JPUtilsConfig.m */,
+				F5081C0125B7FDF100A92C12 /* String */,
+				F5081BFA25B7E33F00A92C12 /* Date */,
+				F5081BFB25B7E33F00A92C12 /* Route */,
+				F5081BFC25B7E33F00A92C12 /* System */,
+				2097A6595A310BB0B2B23129 /* View */,
 			);
-			path = JPUtils;
+			path = "JPUtils-OC";
 			sourceTree = SOURCE_ROOT;
+		};
+		F5081BFA25B7E33F00A92C12 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				F5081BFD25B7E36900A92C12 /* JPDateUtils.h */,
+				F5081BFE25B7E36900A92C12 /* JPDateUtils.m */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		F5081BFB25B7E33F00A92C12 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				2097AB604E4E317CE78272D1 /* JPRouteUtils.m */,
+				2097AB8EE3208785A65EFE19 /* JPRouteUtils.h */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		F5081BFC25B7E33F00A92C12 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				2097A9B3F561948CDBFF975C /* JPSystemUtils.m */,
+				2097AB67889E1B821537386F /* JPSystemUtils.h */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		F5081C0125B7FDF100A92C12 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				F5081C0225B7FE0700A92C12 /* JPStringUtils.h */,
+				F5081C0325B7FE0700A92C12 /* JPStringUtils.m */,
+			);
+			path = String;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -91,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5081BF525B7DB5800A92C12 /* Build configuration list for PBXNativeTarget "JPUtilsDemo" */;
 			buildPhases = (
+				D74D4402178D066385B631C1 /* [CP] Check Pods Manifest.lock */,
 				F5081BD825B7DB5500A92C12 /* Sources */,
 				F5081BD925B7DB5500A92C12 /* Frameworks */,
 				F5081BDA25B7DB5500A92C12 /* Resources */,
+				5173444504493EBE38B6B661 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +256,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5173444504493EBE38B6B661 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JPUtilsDemo/Pods-JPUtilsDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JPUtilsDemo/Pods-JPUtilsDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JPUtilsDemo/Pods-JPUtilsDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D74D4402178D066385B631C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JPUtilsDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F5081BD825B7DB5500A92C12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -155,8 +305,16 @@
 			files = (
 				F5081BE725B7DB5500A92C12 /* ViewController.m in Sources */,
 				F5081BE125B7DB5500A92C12 /* AppDelegate.m in Sources */,
+				F5081C0425B7FE0700A92C12 /* JPStringUtils.m in Sources */,
 				F5081BF225B7DB5800A92C12 /* main.m in Sources */,
+				F5081C1B25B8344E00A92C12 /* TestSubViewController.m in Sources */,
+				F5081BFF25B7E36900A92C12 /* JPDateUtils.m in Sources */,
 				F5081BE425B7DB5500A92C12 /* SceneDelegate.m in Sources */,
+				F5081C1525B82D5300A92C12 /* TestViewController.m in Sources */,
+				2097A389BE81C1D311081DBD /* JPSystemUtils.m in Sources */,
+				2097A17CFCFF74C45CE87186 /* JPRouteUtils.m in Sources */,
+				2097A68950615219CD3ECBC9 /* JPViewUtils.m in Sources */,
+				F5081C2F25B847D700A92C12 /* JPUtilsConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +454,7 @@
 		};
 		F5081BF625B7DB5800A92C12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DFB60EE6C2A9DDEBE9F17C6 /* Pods-JPUtilsDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,6 +472,7 @@
 		};
 		F5081BF725B7DB5800A92C12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93E19467E17B0C9824670BCC /* Pods-JPUtilsDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
