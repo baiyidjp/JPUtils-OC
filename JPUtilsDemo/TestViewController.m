@@ -32,11 +32,22 @@
     [self.view addSubview:button];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+
+    [super viewWillDisappear:animated];
+
+    if (self.jp_routeCompletion) {
+        self.jp_routeCompletion(@"测试回调数据");
+    }
+}
+
 #pragma mark - click
 - (void)clickButton {
 
     NSURL *url_route2 = [JPRouteUtils jp_routeURLWithHost:@"TestSubViewController" queryDictionary:@{@"key1-s": @"value1", @"key2-s": @"value2"}];
-    [JPRouteUtils jp_jumpWithRoute:url_route2];
+    [JPRouteUtils jp_jumpWithRoute:url_route2 completion:^(id data) {
+        NSLog(@"push->completionDataSub: %@", data);
+    }];
 }
 
 @end

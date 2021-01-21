@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
-    JPUtilsConfig.jp_routeScheme = @"JPRoute";
+    [JPUtilsConfig jp_configRouteScheme:@"baiyidjp"];
 
     return YES;
 }

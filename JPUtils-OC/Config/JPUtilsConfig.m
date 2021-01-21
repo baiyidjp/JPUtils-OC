@@ -6,8 +6,7 @@
 //
 
 #import "JPUtilsConfig.h"
-#import "JPStringUtils.h"
-#import "objc/runtime.h"
+#import "JPRouteUtils.h"
 
 @implementation JPUtilsConfig
 
@@ -17,7 +16,7 @@
 
 + (void)jp_configCurrentLanguage:(NSString *)language {
 
-    if ([JPStringUtils jp_stringIsNull:language]) {
+    if ([JPUtilsConfig jp_stringIsNull:language]) {
         [[NSUserDefaults standardUserDefaults] removeObjectForKey:JPUtils_Date_CurrentLanguage];
     } else {
         if ([[JPUtilsConfig jp_supportLanguages] containsObject:language]) {
@@ -30,14 +29,24 @@
     }
 }
 
-+ (void)setJp_routeScheme:(NSString *)jp_routeScheme {
++ (BOOL)jp_stringIsNull:(NSString *)string {
 
-    objc_setAssociatedObject(self, @selector(jp_routeScheme), jp_routeScheme, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    if (!string || !string.length) {
+        return true;
+    } else {
+        NSCharacterSet *set = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+        NSString *trimmingString = [string stringByTrimmingCharactersInSet:set];
+        if ([trimmingString length] == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
 
-+ (NSString *)jp_routeScheme {
++ (void)jp_configRouteScheme:(NSString *)routeScheme {
 
-    return objc_getAssociatedObject(self, _cmd);
+    JPRouteUtils.jp_routeScheme = routeScheme;
 }
 
 @end

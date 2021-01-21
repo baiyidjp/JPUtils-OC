@@ -11,6 +11,8 @@
 		2097A17CFCFF74C45CE87186 /* JPRouteUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097AB604E4E317CE78272D1 /* JPRouteUtils.m */; };
 		2097A389BE81C1D311081DBD /* JPSystemUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097A9B3F561948CDBFF975C /* JPSystemUtils.m */; };
 		2097A68950615219CD3ECBC9 /* JPViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097AD33A562DFCF5261C7BF /* JPViewUtils.m */; };
+		2097A8432BDCC91DBCC69058 /* JPLayoutUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097A43B34292A2793BB73C6 /* JPLayoutUtils.m */; };
+		2097A8AF01BAB98B93532B7A /* JPTimerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097A4ADFE787E545877509B /* JPTimerUtils.m */; };
 		F5081BE125B7DB5500A92C12 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5081BE025B7DB5500A92C12 /* AppDelegate.m */; };
 		F5081BE425B7DB5500A92C12 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5081BE325B7DB5500A92C12 /* SceneDelegate.m */; };
 		F5081BE725B7DB5500A92C12 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5081BE625B7DB5500A92C12 /* ViewController.m */; };
@@ -23,15 +25,20 @@
 		F5081C1525B82D5300A92C12 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5081C1425B82D5300A92C12 /* TestViewController.m */; };
 		F5081C1B25B8344E00A92C12 /* TestSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5081C1A25B8344E00A92C12 /* TestSubViewController.m */; };
 		F5081C2F25B847D700A92C12 /* JPUtilsConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F5081C2E25B847D700A92C12 /* JPUtilsConfig.m */; };
+		F5081C4B25B992A600A92C12 /* JPNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F5081C4A25B992A600A92C12 /* JPNavigationBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2097A05834C523852D73DB95 /* JPTimerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPTimerUtils.h; sourceTree = "<group>"; };
+		2097A43B34292A2793BB73C6 /* JPLayoutUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPLayoutUtils.m; sourceTree = "<group>"; };
+		2097A4ADFE787E545877509B /* JPTimerUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPTimerUtils.m; sourceTree = "<group>"; };
 		2097A613711040036798FE98 /* JPViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPViewUtils.h; sourceTree = "<group>"; };
 		2097A9B3F561948CDBFF975C /* JPSystemUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPSystemUtils.m; sourceTree = "<group>"; };
 		2097AB604E4E317CE78272D1 /* JPRouteUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPRouteUtils.m; sourceTree = "<group>"; };
 		2097AB67889E1B821537386F /* JPSystemUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPSystemUtils.h; sourceTree = "<group>"; };
 		2097AB8EE3208785A65EFE19 /* JPRouteUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPRouteUtils.h; sourceTree = "<group>"; };
 		2097AD33A562DFCF5261C7BF /* JPViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPViewUtils.m; sourceTree = "<group>"; };
+		2097AE9FDD9722DC123F8ABE /* JPLayoutUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLayoutUtils.h; sourceTree = "<group>"; };
 		5DFB60EE6C2A9DDEBE9F17C6 /* Pods-JPUtilsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPUtilsDemo.debug.xcconfig"; path = "Target Support Files/Pods-JPUtilsDemo/Pods-JPUtilsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		763C2439C2B850A024E66479 /* Pods_JPUtilsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JPUtilsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E19467E17B0C9824670BCC /* Pods-JPUtilsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPUtilsDemo.release.xcconfig"; path = "Target Support Files/Pods-JPUtilsDemo/Pods-JPUtilsDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -58,6 +65,8 @@
 		F5081C2C25B847CB00A92C12 /* JPUtils-OC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JPUtils-OC.h"; sourceTree = "<group>"; };
 		F5081C2D25B847D700A92C12 /* JPUtilsConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPUtilsConfig.h; sourceTree = "<group>"; };
 		F5081C2E25B847D700A92C12 /* JPUtilsConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPUtilsConfig.m; sourceTree = "<group>"; };
+		F5081C4925B992A600A92C12 /* JPNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPNavigationBar.h; sourceTree = "<group>"; };
+		F5081C4A25B992A600A92C12 /* JPNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPNavigationBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +97,33 @@
 				2097A613711040036798FE98 /* JPViewUtils.h */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2097A860E683C7C27C6DA7D0 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				2097A4ADFE787E545877509B /* JPTimerUtils.m */,
+				2097A05834C523852D73DB95 /* JPTimerUtils.h */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		2097A8ED32C2AAD9963CD929 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				2097A43B34292A2793BB73C6 /* JPLayoutUtils.m */,
+				2097AE9FDD9722DC123F8ABE /* JPLayoutUtils.h */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		2097AD56F485E89609F5BE2A /* SubClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F5081C4925B992A600A92C12 /* JPNavigationBar.h */,
+				F5081C4A25B992A600A92C12 /* JPNavigationBar.m */,
+			);
+			path = SubClasses;
 			sourceTree = "<group>";
 		};
 		DB18D5A9EAA31F5630085D19 /* Frameworks */ = {
@@ -142,14 +178,16 @@
 		F5081BF925B7DB7500A92C12 /* JPUtils-OC */ = {
 			isa = PBXGroup;
 			children = (
+				F5081C3925B959F000A92C12 /* Config */,
 				F5081C2C25B847CB00A92C12 /* JPUtils-OC.h */,
-				F5081C2D25B847D700A92C12 /* JPUtilsConfig.h */,
-				F5081C2E25B847D700A92C12 /* JPUtilsConfig.m */,
 				F5081C0125B7FDF100A92C12 /* String */,
 				F5081BFA25B7E33F00A92C12 /* Date */,
 				F5081BFB25B7E33F00A92C12 /* Route */,
 				F5081BFC25B7E33F00A92C12 /* System */,
 				2097A6595A310BB0B2B23129 /* View */,
+				2097A860E683C7C27C6DA7D0 /* Timer */,
+				2097A8ED32C2AAD9963CD929 /* Layout */,
+				2097AD56F485E89609F5BE2A /* SubClasses */,
 			);
 			path = "JPUtils-OC";
 			sourceTree = SOURCE_ROOT;
@@ -190,6 +228,15 @@
 			path = String;
 			sourceTree = "<group>";
 		};
+		F5081C3925B959F000A92C12 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F5081C2D25B847D700A92C12 /* JPUtilsConfig.h */,
+				F5081C2E25B847D700A92C12 /* JPUtilsConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -201,7 +248,7 @@
 				F5081BD825B7DB5500A92C12 /* Sources */,
 				F5081BD925B7DB5500A92C12 /* Frameworks */,
 				F5081BDA25B7DB5500A92C12 /* Resources */,
-				5173444504493EBE38B6B661 /* [CP] Embed Pods Frameworks */,
+				830EEC97395D0EAAC7712E99 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,7 +304,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5173444504493EBE38B6B661 /* [CP] Embed Pods Frameworks */ = {
+		830EEC97395D0EAAC7712E99 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -310,11 +357,14 @@
 				F5081C1B25B8344E00A92C12 /* TestSubViewController.m in Sources */,
 				F5081BFF25B7E36900A92C12 /* JPDateUtils.m in Sources */,
 				F5081BE425B7DB5500A92C12 /* SceneDelegate.m in Sources */,
+				F5081C4B25B992A600A92C12 /* JPNavigationBar.m in Sources */,
 				F5081C1525B82D5300A92C12 /* TestViewController.m in Sources */,
 				2097A389BE81C1D311081DBD /* JPSystemUtils.m in Sources */,
 				2097A17CFCFF74C45CE87186 /* JPRouteUtils.m in Sources */,
 				2097A68950615219CD3ECBC9 /* JPViewUtils.m in Sources */,
 				F5081C2F25B847D700A92C12 /* JPUtilsConfig.m in Sources */,
+				2097A8AF01BAB98B93532B7A /* JPTimerUtils.m in Sources */,
+				2097A8432BDCC91DBCC69058 /* JPLayoutUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

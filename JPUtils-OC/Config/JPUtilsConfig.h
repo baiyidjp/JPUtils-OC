@@ -25,9 +25,11 @@ static NSString *JPUtils_Date_CurrentLanguage = @"JPUtils_Date_CurrentLanguage";
  */
 + (void)jp_configCurrentLanguage:(NSString *)language;
 
-
-/** jp_routeScheme */
-@property(nonatomic,strong,class) NSString *jp_routeScheme;
+/**
+ * 配置路由的默认scheme
+ * @param routeScheme
+ */
++ (void)jp_configRouteScheme:(NSString *)routeScheme;
 
 @end
 

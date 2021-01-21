@@ -17,14 +17,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    
-    
+
     self.title = @"TestSub";
 
     self.view.backgroundColor = UIColor.whiteColor;
 
     NSLog(@"%@", self.jp_parameters);
+
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+
+//    [super viewWillDisappear:animated];
+
+    if (self.jp_routeCompletion) {
+        self.jp_routeCompletion(@"测试回调数据");
+    }
 }
 
 /*

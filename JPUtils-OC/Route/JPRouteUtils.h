@@ -14,9 +14,12 @@ typedef void(^JPRouteCompletion)(id data);
 
 @interface JPRouteUtils : NSObject
 
+/** jp_routeScheme */
+@property(nonatomic,strong,class) NSString *jp_routeScheme;
+
 /**
  * 获取路由URL，默认使用 jp_routeScheme, 没有query数据
- * @param host 控制器的名称
+ * @param host 要跳转的目标控制器的名称
  * @return 路由URL
  */
 + (NSURL *)jp_routeURLWithHost:(NSString *)host;
@@ -24,8 +27,8 @@ typedef void(^JPRouteCompletion)(id data);
 /**
  * 获取路由的URL
  * 获取路由URL，默认使用 jp_routeScheme
- * @param host  控制器的名称
- * @param queryDictionary 需要带的数据
+ * @param host  要跳转的目标控制器的名称
+ * @param queryDictionary 要传给目标控制器的参数
  * @return 路由URL
  */
 + (NSURL *)jp_routeURLWithHost:(NSString *)host queryDictionary:(NSDictionary *)queryDictionary;
@@ -33,8 +36,8 @@ typedef void(^JPRouteCompletion)(id data);
 /**
  * 获取路由的URL
  * @param scheme : https 或者自定义的 jp_routeScheme
- * @param host  控制器的名称
- * @param queryDictionary 需要带的数据
+ * @param host  要跳转的目标控制器的名称
+ * @param queryDictionary 要传给目标控制器的参数
  * @return 路由URL
  */
 + (NSURL *)jp_routeURLWithScheme:(NSString *)scheme host:(NSString *)host queryDictionary:(NSDictionary *)queryDictionary;
@@ -44,6 +47,13 @@ typedef void(^JPRouteCompletion)(id data);
  * @param route 路由url
  */
 + (void)jp_jumpWithRoute:(NSURL *)route;
+
+/**
+ * 路由跳转 push
+ * @param route 路由url
+ * @param completion 回调
+ */
++ (void)jp_jumpWithRoute:(NSURL *)route completion:(JPRouteCompletion)completion;
 
 /**
  * 路由跳转 push
@@ -65,6 +75,13 @@ typedef void(^JPRouteCompletion)(id data);
  * @param route 路由URL
  */
 + (void)jp_jumpModalWithRoute:(NSURL *)route;
+
+/**
+ * 路由跳转 modal
+ * @param route 路由URL
+ * @param completion 回调
+ */
++ (void)jp_jumpModalWithRoute:(NSURL *)route completion:(JPRouteCompletion)completion;
 
 /**
  * 路由跳转 modal
