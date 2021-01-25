@@ -17,7 +17,6 @@ Pod::Spec.new do |s|
   #Config
   s.subspec 'Config' do |ss|
   ss.source_files = "JPUtils-OC/Config/*.{h,m}"
-  ss.dependency 'JPUtils-OC/Route'
   end
 
   #Date
@@ -54,13 +53,11 @@ Pod::Spec.new do |s|
   #Timer
   s.subspec 'Timer' do |ss|
   ss.source_files = "JPUtils-OC/Timer/*.{h,m}"
-  ss.dependency 'JPUtils-OC/Date'
   end
 
   #View
   s.subspec 'View' do |ss|
   ss.source_files = "JPUtils-OC/View/*.{h,m}"
-  ss.dependency 'JPUtils-OC/System'
   end
 # pod trunk push --allow-warnings --skip-import-validation
 

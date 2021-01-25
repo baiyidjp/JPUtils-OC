@@ -12,6 +12,11 @@ static NSString *JPRouteScheme = @"JPRouteScheme";
 
 @implementation JPRouteUtils
 
++ (void)jp_configRouteScheme:(NSString *)routeScheme {
+
+    JPRouteUtils.jp_routeScheme = routeScheme;
+}
+
 + (void)setJp_routeScheme:(NSString *)jp_routeScheme {
 
     if ([JPStringUtils jp_stringIsNull:jp_routeScheme]) {

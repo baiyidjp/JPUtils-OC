@@ -6,7 +6,6 @@
 //
 
 #import "JPUtilsConfig.h"
-#import "JPRouteUtils.h"
 
 @implementation JPUtilsConfig
 
@@ -16,7 +15,7 @@
 
 + (void)jp_configCurrentLanguage:(NSString *)language {
 
-    if ([JPUtilsConfig jp_stringIsNull:language]) {
+    if ([JPUtilsConfig jp_configStringIsNull:language]) {
         [[NSUserDefaults standardUserDefaults] removeObjectForKey:JPUtils_Date_CurrentLanguage];
     } else {
         if ([[JPUtilsConfig jp_supportLanguages] containsObject:language]) {
@@ -29,7 +28,7 @@
     }
 }
 
-+ (BOOL)jp_stringIsNull:(NSString *)string {
++ (BOOL)jp_configStringIsNull:(NSString *)string {
 
     if (!string || !string.length) {
         return true;
@@ -42,11 +41,6 @@
             return false;
         }
     }
-}
-
-+ (void)jp_configRouteScheme:(NSString *)routeScheme {
-
-    JPRouteUtils.jp_routeScheme = routeScheme;
 }
 
 @end

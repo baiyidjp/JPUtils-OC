@@ -3,13 +3,12 @@
 //
 
 #import "JPViewUtils.h"
-#import "JPSystemUtils.h"
 
 @implementation JPViewUtils
 
 + (UIViewController *)jp_currentController {
 
-    UIViewController *rootViewController = [JPSystemUtils jp_keyWindow].rootViewController;
+    UIViewController *rootViewController = [JPViewUtils jp_viewKeyWindow].rootViewController;
 
     UIViewController *currentVC = [self jp_currentControllerFrom:rootViewController];
 
@@ -39,6 +38,24 @@
     }
 
     return currentController;
+}
+
++ (UIWindow *)jp_viewKeyWindow {
+
+    UIWindow *window = nil;
+
+    if (@available(iOS 13.0, *)) {
+        for (UIWindowScene *windowScene in [UIApplication sharedApplication].connectedScenes) {
+            if (windowScene.activationState == UISceneActivationStateForegroundActive) {
+                window = windowScene.windows.firstObject;
+                break;
+            }
+        }
+    } else {
+        window = [UIApplication sharedApplication].keyWindow;
+    }
+
+    return window;
 }
 
 @end

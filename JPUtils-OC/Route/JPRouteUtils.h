@@ -14,6 +14,12 @@ typedef void(^JPRouteCompletion)(id data);
 
 @interface JPRouteUtils : NSObject
 
+/**
+ * 配置路由的默认scheme
+ * @param routeScheme
+ */
++ (void)jp_configRouteScheme:(NSString *)routeScheme;
+
 /** jp_routeScheme */
 @property(nonatomic,strong,class) NSString *jp_routeScheme;
 

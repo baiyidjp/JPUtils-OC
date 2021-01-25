@@ -3,7 +3,6 @@
 //
 
 #import "JPTimerUtils.h"
-#import "JPDateUtils.h"
 
 @implementation JPTimerUtils
 
@@ -42,7 +41,7 @@ dispatch_semaphore_t _timeSemaphore;
     dispatch_semaphore_wait(_timeSemaphore, DISPATCH_TIME_FOREVER);
 
     //设置定时器的唯一标识
-    NSString *timerName = [NSString stringWithFormat:@"jp_timerName_%zd_%f_%d",_timersDict.count,[JPDateUtils jp_currentTimeStamp], arc4random_uniform(100000000)];
+    NSString *timerName = [NSString stringWithFormat:@"jp_timerName_%zd_%f_%d",_timersDict.count,[JPTimerUtils jp_timerCurrentTimeStamp], arc4random_uniform(100000000)];
     //存储到字典中
     _timersDict[timerName] = timer;
 
@@ -118,6 +117,13 @@ dispatch_semaphore_t _timeSemaphore;
     BOOL run = [_timersDict.allKeys containsObject:name];
 
     return run;
+}
+
++ (NSTimeInterval)jp_timerCurrentTimeStamp {
+
+    NSDate* date = [NSDate dateWithTimeIntervalSinceNow:0];//获取当前时间0秒后的时间
+    NSTimeInterval timeInterval = [date timeIntervalSince1970];
+    return timeInterval * 1000;
 }
 
 @end
