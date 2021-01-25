@@ -43,7 +43,6 @@ Pod::Spec.new do |s|
   #String
   s.subspec 'String' do |ss|
   ss.source_files = "JPUtils-OC/String/*.{h,m}"
-  ss.dependency 'JPUtils-OC/Config'
   end
 
   #System

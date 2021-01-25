@@ -25,7 +25,6 @@
 		F5081C1525B82D5300A92C12 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5081C1425B82D5300A92C12 /* TestViewController.m */; };
 		F5081C1B25B8344E00A92C12 /* TestSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5081C1A25B8344E00A92C12 /* TestSubViewController.m */; };
 		F5081C2F25B847D700A92C12 /* JPUtilsConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F5081C2E25B847D700A92C12 /* JPUtilsConfig.m */; };
-		F5081C4B25B992A600A92C12 /* JPNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F5081C4A25B992A600A92C12 /* JPNavigationBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,8 +64,6 @@
 		F5081C2C25B847CB00A92C12 /* JPUtils-OC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JPUtils-OC.h"; sourceTree = "<group>"; };
 		F5081C2D25B847D700A92C12 /* JPUtilsConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPUtilsConfig.h; sourceTree = "<group>"; };
 		F5081C2E25B847D700A92C12 /* JPUtilsConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPUtilsConfig.m; sourceTree = "<group>"; };
-		F5081C4925B992A600A92C12 /* JPNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPNavigationBar.h; sourceTree = "<group>"; };
-		F5081C4A25B992A600A92C12 /* JPNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPNavigationBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,15 +112,6 @@
 				2097AE9FDD9722DC123F8ABE /* JPLayoutUtils.h */,
 			);
 			path = Layout;
-			sourceTree = "<group>";
-		};
-		2097AD56F485E89609F5BE2A /* SubClasses */ = {
-			isa = PBXGroup;
-			children = (
-				F5081C4925B992A600A92C12 /* JPNavigationBar.h */,
-				F5081C4A25B992A600A92C12 /* JPNavigationBar.m */,
-			);
-			path = SubClasses;
 			sourceTree = "<group>";
 		};
 		DB18D5A9EAA31F5630085D19 /* Frameworks */ = {
@@ -187,7 +175,6 @@
 				2097A6595A310BB0B2B23129 /* View */,
 				2097A860E683C7C27C6DA7D0 /* Timer */,
 				2097A8ED32C2AAD9963CD929 /* Layout */,
-				2097AD56F485E89609F5BE2A /* SubClasses */,
 			);
 			path = "JPUtils-OC";
 			sourceTree = SOURCE_ROOT;
@@ -357,7 +344,6 @@
 				F5081C1B25B8344E00A92C12 /* TestSubViewController.m in Sources */,
 				F5081BFF25B7E36900A92C12 /* JPDateUtils.m in Sources */,
 				F5081BE425B7DB5500A92C12 /* SceneDelegate.m in Sources */,
-				F5081C4B25B992A600A92C12 /* JPNavigationBar.m in Sources */,
 				F5081C1525B82D5300A92C12 /* TestViewController.m in Sources */,
 				2097A389BE81C1D311081DBD /* JPSystemUtils.m in Sources */,
 				2097A17CFCFF74C45CE87186 /* JPRouteUtils.m in Sources */,
