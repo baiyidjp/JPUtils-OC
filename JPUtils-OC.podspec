@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "JPUtils-OC"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Objective-C 常用的工具和方法"
   s.homepage     = "https://github.com/baiyidjp/JPUtils-OC"
   s.license      = "MIT"
@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
   ss.source_files = "JPUtils-OC/Route/*.{h,m}"
   ss.dependency 'JPUtils-OC/String'
   ss.dependency 'JPUtils-OC/View'
-  ss.dependency 'JPCategory-OC'
+  ss.dependency 'JPCategory-OC/UIViewController'
   end
 
   #String
