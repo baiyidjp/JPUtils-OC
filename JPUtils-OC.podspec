@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "JPUtils-OC"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Objective-C 常用的工具和方法"
   s.homepage     = "https://github.com/baiyidjp/JPUtils-OC"
   s.license      = "MIT"
@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.dependency 'JPCategory-OC'
 
   #Config
   s.subspec 'Config' do |ss|
@@ -36,7 +37,6 @@ Pod::Spec.new do |s|
   ss.source_files = "JPUtils-OC/Route/*.{h,m}"
   ss.dependency 'JPUtils-OC/String'
   ss.dependency 'JPUtils-OC/View'
-  ss.dependency 'JPCategory-OC/UIViewController'
   end
 
   #String
