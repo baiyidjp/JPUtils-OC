@@ -46,7 +46,7 @@
 
  @param name 要取消的定时器的唯一标识
  */
-+ (void)cancelTask:(NSString *)name;
++ (void)jp_cancelTask:(NSString *)name;
 
 /**
  检查指定的定时器是否在运行
@@ -54,7 +54,7 @@
  @param name 定时器标识
  @return 结果
  */
-+ (BOOL)checkTimerRun:(NSString *)name;
++ (BOOL)jp_checkTimerRun:(NSString *)name;
 
 
 @end

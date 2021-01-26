@@ -55,7 +55,7 @@ dispatch_semaphore_t _jpTimeSemaphore;
 
         //判断是否是一次性任务
         if (!repeats) {
-            [self cancelTask:timerName];
+            [self jp_cancelTask:timerName];
         }
     });
     dispatch_resume(timer);
@@ -81,13 +81,13 @@ dispatch_semaphore_t _jpTimeSemaphore;
     }];
 }
 
-+ (void)cancelTask:(NSString *)name {
++ (void)jp_cancelTask:(NSString *)name {
 
     if (!name || !name.length) {
         return;
     }
 
-    if (![self checkTimerRun:name]) {
+    if (![self jp_checkTimerRun:name]) {
         return;
     }
 
@@ -107,7 +107,7 @@ dispatch_semaphore_t _jpTimeSemaphore;
     dispatch_semaphore_signal(_jpTimeSemaphore);
 }
 
-+ (BOOL)checkTimerRun:(NSString *)name {
++ (BOOL)jp_checkTimerRun:(NSString *)name {
 
     if (!name || !name.length) {
 

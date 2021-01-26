@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "JPUtils-OC"
-  s.version      = "0.0.3"
+  s.version      = "0.0.5"
   s.summary      = "Objective-C 常用的工具和方法"
   s.homepage     = "https://github.com/baiyidjp/JPUtils-OC"
   s.license      = "MIT"
