@@ -13,7 +13,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.dependency 'JPCategory-OC'
 
   #Config
   s.subspec 'Config' do |ss|
@@ -37,6 +36,7 @@ Pod::Spec.new do |s|
   ss.source_files = "JPUtils-OC/Route/*.{h,m}"
   ss.dependency 'JPUtils-OC/String'
   ss.dependency 'JPUtils-OC/View'
+  ss.dependency 'JPCategory-OC'
   end
 
   #String
