@@ -2,21 +2,15 @@ PODS:
   - JPCategory-OC/UIViewController (1.5.2)
 
 DEPENDENCIES:
-  - JPCategory-OC/UIViewController (from `https://github.com/baiyidjp/JPCategory-OC.git`, tag `1.5.2`)
+  - JPCategory-OC/UIViewController (= 1.5.2)
 
-EXTERNAL SOURCES:
-  JPCategory-OC:
-    :git: https://github.com/baiyidjp/JPCategory-OC.git
-    :tag: 1.5.2
-
-CHECKOUT OPTIONS:
-  JPCategory-OC:
-    :git: https://github.com/baiyidjp/JPCategory-OC.git
-    :tag: 1.5.2
+SPEC REPOS:
+  trunk:
+    - JPCategory-OC
 
 SPEC CHECKSUMS:
   JPCategory-OC: 15a8239cba52b7bf455b98dbcfcf36d6eb52e3c3
 
-PODFILE CHECKSUM: 4729e65faae79de41df3dddd981e832db3f3db83
+PODFILE CHECKSUM: 92f88726df1937c9341391ae1c2e05caf27952a2
 
 COCOAPODS: 1.10.0

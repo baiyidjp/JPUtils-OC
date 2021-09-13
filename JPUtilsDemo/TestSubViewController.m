@@ -23,6 +23,9 @@
     self.view.backgroundColor = UIColor.whiteColor;
 
     NSLog(@"%@", self.jp_parameters);
+    
+    NSLog(@"viewControllers: %@",self.navigationController.viewControllers);
+    NSLog(@"childViewControllers: %@",self.navigationController.childViewControllers);
 
 }
 
